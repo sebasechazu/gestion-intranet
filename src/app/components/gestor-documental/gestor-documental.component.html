@@ -1,20 +1,9 @@
-<p style="background-color: pink; color: black;">gestor-documental works!</p>
-
-<nav>
-    <app-sidebar-gestor></app-sidebar-gestor>
-    <!-- <ul>
-        <li><a routerLink="/datos-personales">Datos Personales</a></li>
-        <li><a routerLink="/datos-academicos">Datos Académicos</a></li>
-        <li><a routerLink="/direccion-profesional">Dirección Profesional</a></li>
-        <li><a routerLink="/datos-bancarios">Datos Bancarios</a></li>
-        <li><a routerLink="/especialidades">Especialidades</a></li>
-        <li><a routerLink="/premios-y-distinciones">Premios y distinciones</a></li>
-        <li><a routerLink="/publicacion-de-datos">Publicación de datos</a></li>
-        <li><a routerLink="/aceptacion-y-enviar">Aceptación y Enviar</a></li>
-        <li><a routerLink="/documentos">Documentos</a></li>
-    </ul> -->
-</nav>
-
-
-
-<router-outlet></router-outlet>
+<h1>Gestor Documental</h1>
+<div style="display: flex;">
+    <div style="flex: 1;">
+        <app-sidebar-gestor></app-sidebar-gestor>
+    </div>
+    <div style="flex: 3;">
+        <router-outlet></router-outlet>
+    </div>
+</div>

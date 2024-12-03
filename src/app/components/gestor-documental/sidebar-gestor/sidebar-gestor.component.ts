@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
-import { PanelMenu } from 'primeng/panelmenu';
+import { MenuModule } from 'primeng/menu';
 
 @Component({
   selector: 'app-sidebar-gestor',
   standalone: true,
-  imports: [PanelMenu],
+  imports: [MenuModule],
   templateUrl: './sidebar-gestor.component.html',
   styleUrl: './sidebar-gestor.component.scss'
 })
 export class SidebarGestorComponent {
+
   items: MenuItem[] = [];
 
   constructor(private router: Router) { }
@@ -18,21 +19,14 @@ export class SidebarGestorComponent {
   ngOnInit() {
 
     this.items = [
-      { label: 'Certificados', icon: 'pi pi-file-o', routerLink: '/certificados' },
-      { label: 'Registro de Entrada', icon: 'pi pi-comments' },
-      { label: 'Registro de Salida', icon: 'pi pi-comments' },
-      { label: 'Registro Salida', icon: 'pi pi-sign-out' },
-      { label: 'Elecciones', icon: 'pi pi-calendar' },
-      {
-        label: 'Secretaria', icon: 'pi pi-user', items: [
-          { label: 'Consultar', icon: 'pi pi-file' },
-          { label: 'Alta', icon: 'pi pi-pencil' },
-          { label: 'Modificar', icon: 'pi pi-refresh' }
-        ]
-      },
-
-      { label: 'Gestor Documental', icon: 'pi pi-cloud', routerLink: '/gestor-documental' },
-
+      { label: 'Datos Personales', routerLink: '/gestor-documental/datos-personales' },
+      { label: 'Datos Academicos', routerLink: '/gestor-documental/datos-academicos' },
+      { label: 'Direccion Profesinal' },
+      { label: 'Especialidades' },
+      { label: 'Premios y Distinciones', },
+      { label: 'Publicacion de datos' },
+      { label: 'Aceptar y Enviar' },
+      { label: 'Documentos', routerLink: '/gestor-documental/documentos' },
     ];
   }
 }
