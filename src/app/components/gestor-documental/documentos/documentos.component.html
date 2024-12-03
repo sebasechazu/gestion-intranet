@@ -1,8 +1,45 @@
-<header style="display: flex; justify-content: space-between; align-items: center;">
-    <h2>Documentos</h2>
-    <input type="text" placeholder="Buscar..." style="padding: 5px;"/>
-</header>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <h2 style="margin: 0;">Documentos</h2>
+    <div style="position: relative; display: flex; align-items: center;">
+        @if(usuarioOptions)
+        {
+            <div class="card flex justify-center">
+                <p-select [options]="usuarios" [(ngModel)]="usuarioSelected" optionLabel="nombre" placeholder="usuarios" class="w-full md:w-56" />
+            </div>
+            
+        }
+       
+    </div>
+  </div>
+  
 
-<div style="margin-top: 20px;">
-    <!-- Aquí va el contenido -->
+<!-- Tabla datos de usuario -->
+<div style="display: flex;">
+    <app-sidebar-documentos style="flex: 1;" [user]="usuarioSelected"></app-sidebar-documentos>
+
+    @if(usuarioSelected)
+    {
+        <div style="flex: 3; margin-left: 20px;">
+            <p-table [value]="usuarioSelected.documentos" >
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de creación</th>
+                        <th>verificado</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-documento>
+                    <tr>
+                        <td>{{documento.nombre}}</td>
+                        <td>{{documento.fecha}}</td>
+                        <td>
+                            <button style="background: none; border: none; cursor: pointer;">
+                                <i class="pi pi-check" style="font-size: 1.2em; color: green;"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    }
 </div>
