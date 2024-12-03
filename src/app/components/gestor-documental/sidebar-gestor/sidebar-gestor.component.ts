@@ -1,17 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { PanelMenu } from 'primeng/panelmenu';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
+import { PanelMenu } from 'primeng/panelmenu';
 
 @Component({
-  selector: 'app-sidebar',
+  selector: 'app-sidebar-gestor',
   standalone: true,
   imports: [PanelMenu],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  templateUrl: './sidebar-gestor.component.html',
+  styleUrl: './sidebar-gestor.component.scss'
 })
-export class SidebarComponent {
-
+export class SidebarGestorComponent {
   items: MenuItem[] = [];
 
   constructor(private router: Router) { }
@@ -36,9 +35,4 @@ export class SidebarComponent {
 
     ];
   }
-
-
-
-
-
 }
