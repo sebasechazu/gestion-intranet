@@ -7,9 +7,11 @@ import { DatosAcademicosComponent } from './components/gestor-documental/datos-a
 
 export const routes: Routes = [
     { path: 'certificados', component: CertificadosComponent },
-    {
+    { path: '', redirectTo: 'gestor-documental', pathMatch: 'full' },
+    {      
         path: 'gestor-documental', component: GestorDocumentalComponent,
         children: [
+            { path: '', redirectTo: 'documentos', pathMatch: 'full' },
             { path: 'datos-personales', component: DatosPersonalesComponent },
             { path: 'datos-academicos', component: DatosAcademicosComponent },
             { path: 'documentos', component: DocumentosComponent }

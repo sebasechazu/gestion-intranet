@@ -26,7 +26,8 @@ export class AppComponent {
   ngOnInit() {
     this.items = [
       {
-        icon: 'pi pi-inbox'
+        icon: 'pi pi-inbox',
+        styleClass: 'profile-icon'
       },
       {
         
@@ -37,7 +38,8 @@ export class AppComponent {
         items: [
           {
             label: 'Editar Perfil',
-            icon: 'pi pi-user-edit'
+            icon: 'pi pi-user-edit',
+            
           },
           {
             label: 'Datos',

@@ -1,5 +1,10 @@
-:host ::ng-deep .p-panelMenu {
-    width: auto;
-    min-width: fit-content;
-    max-width: 100px; 
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
