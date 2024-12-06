@@ -9,16 +9,9 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-::ng-deep .menu-container-sidebar .p-panelmenu,
-::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content,
-::ng-deep .p-panelmenu .p-panelmenu-content,
-::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link .p-menuitem-icon,
-::ng-deep .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link .p-menuitem-text,
-::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content,
-::ng-deep .ng-trigger .ng-trigger-rootItem .p-panelmenu-expanded .p-panelmenu-content {
+::ng-deep .menu-container-sidebar .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content {
     background: #000000;
-    border: none;
-    color: white;
+    border: 0;
 }
 
 ::ng-deep .menu-container-sidebar .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action {
