@@ -4,7 +4,7 @@
         @if(usuarioOptions)
         {
             <div class="card flex justify-center">
-                <p-select [options]="usuarios" [(ngModel)]="usuarioSelected" optionLabel="nombre" placeholder="usuarios" class="w-full md:w-56" />
+                <p-dropdown [options]="usuarios" [(ngModel)]="usuarioSelected" optionLabel="nombre" placeholder="usuarios" class="w-full md:w-56" />
             </div>
             
         }

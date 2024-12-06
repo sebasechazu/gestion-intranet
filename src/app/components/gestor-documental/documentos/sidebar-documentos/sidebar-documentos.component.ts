@@ -1,12 +1,12 @@
 import { Component, input } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { PanelMenu } from 'primeng/panelmenu';
+import { PanelMenuModule } from 'primeng/panelmenu';
 import { Usuario } from '../../../../models/usuario.model';
 
 @Component({
   selector: 'app-sidebar-documentos',
   standalone: true,
-  imports: [PanelMenu],
+  imports: [PanelMenuModule],
   templateUrl: './sidebar-documentos.component.html',
   styleUrl: './sidebar-documentos.component.scss'
 })

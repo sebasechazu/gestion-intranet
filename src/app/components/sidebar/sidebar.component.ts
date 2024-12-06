@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { PanelMenu } from 'primeng/panelmenu';
 import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [PanelMenu],
+  imports: [PanelMenuModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit {
 
   items: MenuItem[] = [];
 

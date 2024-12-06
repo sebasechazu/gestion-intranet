@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TableModule } from 'primeng/table';
 import { FormsModule } from '@angular/forms';
-import { Select } from 'primeng/select';
+import { DropdownModule } from 'primeng/dropdown';
 import { SidebarDocumentosComponent } from "./sidebar-documentos/sidebar-documentos.component";
 import { UsuarioService } from "../../../services/usuario.service";
 import { Usuario } from "../../../models/usuario.model";
@@ -9,7 +9,7 @@ import { Usuario } from "../../../models/usuario.model";
 @Component({
   selector: 'app-documentos',
   standalone: true,
-  imports: [TableModule, SidebarDocumentosComponent, FormsModule, Select],
+  imports: [TableModule, SidebarDocumentosComponent, FormsModule, DropdownModule],
   providers: [UsuarioService],
   templateUrl: './documentos.component.html',
   styleUrls: ['./documentos.component.scss']

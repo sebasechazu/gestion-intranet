@@ -8,3 +8,30 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+::ng-deep .ui-panelmenu .ui-panelmenu-header {
+    background-color: #000000 !important;
+    /* Fondo negro */
+    color: #ffffff !important;
+    /* Texto blanco */
+}
+
+::ng-deep .ui-panelmenu .ui-panelmenu-item {
+    background-color: #000000 !important;
+    /* Fondo negro */
+    color: #ffffff !important;
+    /* Texto blanco */
+}
+
+::ng-deep .ui-panelmenu .ui-panelmenu-item.ui-state-active {
+    background-color: #444444 !important;
+    /* Fondo gris oscuro cuando activo */
+    color: #ffffff !important;
+    /* Texto blanco cuando activo */
+}
+
+::ng-deep .ui-panelmenu .ui-panelmenu-item:hover {
+    background-color: #333333 !important;
+    /* Fondo gris oscuro al pasar mouse */
+    color: #ffffff !important;
+    /* Texto blanco al pasar mouse */
+}

@@ -1,20 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: #333;
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+::ng-deep .ui-panelmenu .ui-panelmenu-header {
+    background-color: #000000 !important;
+    /* Fondo negro */
+    color: #ffffff !important;
+    /* Texto blanco */
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-button,
-select,
-textarea {
-    font-family: inherit;
+::ng-deep .ui-panelmenu .ui-panelmenu-item {
+    background-color: #000000 !important;
+    /* Fondo negro */
+    color: #ffffff !important;
+    /* Texto blanco */
+}
+
+::ng-deep .ui-panelmenu .ui-panelmenu-item.ui-state-active {
+    background-color: #444444 !important;
+    /* Fondo gris oscuro cuando activo */
+    color: #ffffff !important;
+    /* Texto blanco cuando activo */
+}
+
+::ng-deep .ui-panelmenu .ui-panelmenu-item:hover {
+    background-color: #333333 !important;
+    /* Fondo gris oscuro al pasar mouse */
+    color: #ffffff !important;
+    /* Texto blanco al pasar mouse */
 }
