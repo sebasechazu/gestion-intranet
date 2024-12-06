@@ -17,6 +17,17 @@
 ::ng-deep .menu-container-sidebar .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action {
     color: white;
 }
+
+::ng-deep .menu-container-sidebar .p-panelmenu .p-panelmenu-content {
+    background: #000000;
+    border: none;
+}
+
+::ng-deep .menu-container-sidebar .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link .p-menuitem-icon,
+::ng-deep .menu-container-sidebar .p-panelmenu .p-panelmenu-content .p-menuitem>.p-menuitem-content .p-menuitem-link .p-menuitem-text {
+    color: white;
+}
+
 ::ng-deep .menu-container-sidebar .p-panelmenu .p-panelmenu-content .p-menuitem:not(.p-highlight):not(.p-disabled)>.p-menuitem-content:hover {
-    background: rgba(255, 255, 255, .15)
+    background: rgba(255, 255, 255, .152)
 }
